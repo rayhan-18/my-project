@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Website Statis Contoh</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">ContohSite</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="hero">
+      <h1>Selamat datang di Website Statis</h1>
+      <p>Contoh sederhana: HTML, CSS, dan JavaScript — siap untuk dikembangkan.</p>
+      <a class="btn" href="#about">Pelajari Lebih Lanjut</a>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Tentang</h2>
+      <p>Ini adalah template website statis ringan. Gunakan sebagai starting point untuk portofolio, landing page, atau proyek kecil.</p>
+      <ul>
+        <li>Mendukung layout responsif</li>
+        <li>Contoh galeri sederhana</li>
+        <li>Form kontak dummy (tidak mengirim data)</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>Galeri</h2>
+      <div class="grid">
+        <figure><img src="images/photo1.svg" alt="Ilustrasi 1"><figcaption>Ilustrasi 1</figcaption></figure>
+        <figure><img src="images/photo2.svg" alt="Ilustrasi 2"><figcaption>Ilustrasi 2</figcaption></figure>
+        <figure><img src="images/photo3.svg" alt="Ilustrasi 3"><figcaption>Ilustrasi 3</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Kontak</h2>
+      <form id="contactForm">
+        <label>Nama<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Pesan<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn">Kirim</button>
+        <p class="note">Form ini hanya demo — tidak akan benar-benar mengirim data.</p>
+      </form>
+      <div id="formResult" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 ContohSite — Dibuat oleh Rayhan Ganteng</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
