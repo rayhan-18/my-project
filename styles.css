@@ -24,7 +24,7 @@ body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto;
   background: var(--bg);
-  color: var(--accent);
+  color: var(--muted);
   line-height: 1.5;
 }
 
@@ -51,7 +51,7 @@ body {
 
 .brand {
   font-weight: 700;
-  color: var(--accent);
+  color: var(--muted);
 }
 
 .nav-links {
@@ -64,7 +64,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--muted);
 }
 
 /* Toggle Button */
@@ -161,4 +161,47 @@ form textarea {
   font-size: .85rem;
   color: var(--muted);
   margin-top: .5rem;
+}
+
+body.dark .dark-toggle {
+  background: #1e293b;
+  color: white;
+  border-color: #475569;
+}
+
+body.dark .nav-links a {
+  color: var(--muted);
+}
+
+body.dark figcaption {
+  color: var(--muted);
+}
+
+/* DARK MODE OVERRIDE FIX */
+body.dark .brand,
+body.dark .nav-links a,
+body.dark h1,
+body.dark h2,
+body.dark p,
+body.dark li,
+body.dark label,
+body.dark figcaption {
+  color: var(--muted);
+}
+
+body.dark .hero h1 {
+  color: white;
+}
+
+body.dark .btn {
+  background: var(--accent);
+  color: white;
+}
+
+body.dark .card {
+  background: var(--card);
+}
+
+body.dark .site-header {
+  background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
 }

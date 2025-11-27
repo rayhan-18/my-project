@@ -1,4 +1,7 @@
 // Toggle Dark Mode
+
+console.log("Toggle button =", document.getElementById("toggleDark"));
+
 const toggle = document.getElementById("toggleDark");
 
 toggle.addEventListener("click", () => {
